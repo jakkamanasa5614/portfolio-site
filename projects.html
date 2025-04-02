@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Swiper CSS for Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <style>
+        /* Carousel Container */
+        .swiper {
+            width: 80%;
+            height: 400px;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        /* Individual Slide */
+        .swiper-slide {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Project Image */
+        .project-image {
+            width: 100%;
+            max-width: 300px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body class="projects">
+    
+    <header>
+        <h1>Projects</h1>
+        <a href="index.html" style="color: white;">Home</a>
+    </header>
+
+    <!-- Swiper Carousel -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <!-- Track My Bus Project -->
+            <div class="swiper-slide">
+                <img src="assets/images/Track_my_bus.png" alt="Track My Bus" class="project-image">
+                <h2>Track My Bus</h2>
+                <p>A real-time bus tracking system that allows students and employees to track their college bus locations, complete routes, and driver details using a web-based platform.</p>
+                <p><b>Technologies Used:</b> Node.js, MongoDB, HTML, CSS, JavaScript</p>
+            </div>
+
+            <!-- Predictive Maintenance System -->
+            <div class="swiper-slide">
+                <img src="assets/images/Ambulance_tracking_system.jpeg" alt="Ambulance Tracking System" class="project-image">
+                <h2>Ambulance Tracking System</h2>
+                <p>A real-time GPS tracking system that helps hospitals and emergency responders locate and manage ambulances efficiently, reducing response time during emergencies.</p>
+                <p><b>Technologies Used:</b> Android Studio, Google Maps API, Firebase</p>
+            </div>
+
+            <!-- Statistical Analysis Using Excel -->
+            <div class="swiper-slide">
+                <img src="assets/images/Statistical_analysis.jpeg" alt="Statistical Analysis Using Excel" class="project-image">
+                <h2>Statistical Analysis Using Excel</h2>
+                <p>Analyzed student performance datasets using Excel to extract meaningful insights and trends through statistical methods and visualization.</p>
+                <p><b>Technologies Used:</b> Excel, Data Analysis</p>
+            </div>
+
+            <!-- Cloud-Based Attendance System -->
+            <div class="swiper-slide">
+                <img src="assets/images/cloud_attendance.jpeg" alt="Cloud-Based Attendance System" class="project-image">
+                <h2>Cloud-Based Attendance System</h2>
+                <p>A face recognition-based cloud system for automated attendance tracking, ensuring accuracy and security in educational institutions.</p>
+                <p><b>Technologies Used:</b> Python, OpenCV, AWS</p>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+</html>

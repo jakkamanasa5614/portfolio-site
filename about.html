@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* About Me Section Styling */
+        .about-container {
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.6); /* Transparent box */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Profile Image Styling */
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 3px solid white;
+            margin-right: 20px;
+        }
+
+        /* Text Content */
+        .about-text {
+            flex: 1;
+        }
+
+        h2, h3 {
+            color: #ffd700; /* Gold color for headings */
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-img {
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>About Me</h1>
+        <a href="index.html" style="color: white;">Home</a>
+    </header>
+
+    <section>
+        <div class="about-container">
+            <!-- Your Professional Image -->
+            <img src="assets/images/my_photo.jpg" alt="Manasa's Photo" class="profile-img">
+
+            <!-- About Me Content -->
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, I'm <b>Manasa</b>, a passionate <b>BTech 3rd-year student</b> aspiring to be a <b>Data Analyst</b>.  
+                   I love working with <b>data, solving problems</b>, and building <b>web applications</b>.</p>
+
+                <h3>Skills</h3>
+                <ul>
+                    <li>Python, Java, JavaScript</li>
+                    <li>HTML, CSS, Bootstrap</li>
+                    <li>SQL (MySQL, SQLite, MongoDB)</li>
+                    <li>AWS, Cloud Computing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

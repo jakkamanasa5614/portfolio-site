@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Background animation */
+        body {
+            background: linear-gradient(45deg, #00204a, #005792, #00bbf0);
+            background-size: 300% 300%;
+            animation: gradientBG 10s infinite ease-in-out;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Typing effect for Contact heading */
+        h1 {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 3px solid white;
+            white-space: nowrap;
+            font-size: 36px;
+            font-weight: bold;
+            width: 0;
+            animation: typing 2s steps(10, end) forwards, blink 0.6s infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 150px; }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+        /* Contact card */
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            transition: transform 0.5s ease-in-out;
+            margin-top: 20px;
+        }
+
+        /* 3D rotating effect */
+        .contact-card:hover {
+            transform: rotateY(10deg) rotateX(5deg);
+        }
+
+        /* Styling for links */
+        a {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 18px;
+            color: #ffdd57;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #ffdd57;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Ripple effect */
+        a::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background: rgba(255, 221, 87, 0.3);
+            border-radius: 50%;
+            transform: scale(1);
+            opacity: 0;
+            transition: transform 0.5s, opacity 0.5s;
+        }
+
+        a:hover::before {
+            transform: scale(15);
+            opacity: 1;
+        }
+
+        /* Pulsing glow effect */
+        a:hover {
+            color: black;
+            background: #ffdd57;
+            box-shadow: 0 0 15px #ffdd57;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+        <br><br>
+        <a href="index.html" style="color: white;">Home</a>
+    </header>
+    <section>
+        <div class="contact-card">
+            <p>Email: <a href="mailto:manasamanu1775857@gmail.com">manasamanu1775857@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jakka-manasa-385403281" target="_blank">My Profile</a></p>
+            <p>GitHub: <a href="https://github.com/jakkamanasa5614" target="_blank">My GitHub</a></p>
+        </div>
+    </section>
+</body>
+</html>

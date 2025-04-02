@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Page Animation */
+        body {
+            animation: fadeIn 1.5s ease-in-out;
+            text-align: center;
+            background-image: url('assets/images/resume-bg.jpg'); /* Add a background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Resume Container */
+        section {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        /* Slide-in animation for the section */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Resume Download Link */
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #ffd700;
+            background: rgba(0, 0, 0, 0.7);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+            border: 2px solid #ffd700;
+        }
+
+        /* Hover Effect */
+        a:hover {
+            background: #ffd700;
+            color: black;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resume</h1>
+        <a href="index.html" style="color: white;">Home</a>
+    </header>
+    <section>
+        <p>Download my resume: <a href="/Full stack Development RESUME (1).pdf" download>Click Here</a></p>
+    </section>
+</body>
+</html>
