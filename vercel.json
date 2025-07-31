@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/certificate", "destination": "/certificate.html" },
+    { "source": "/resume", "destination": "/resume.html" }
+  ]
+}
