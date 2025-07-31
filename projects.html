@@ -1,118 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Projects</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Swiper CSS for Carousel -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <meta charset="UTF-8">
+  <title>Projects | Jakka Manasa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        /* Carousel Container */
-        .swiper {
-            width: 80%;
-            height: 400px;
-            margin: auto;
-            margin-top: 30px;
-        }
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-        /* Individual Slide */
-        .swiper-slide {
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-        /* Project Image */
-        .project-image {
-            width: 100%;
-            max-width: 300px;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      margin: 0;
+      color: white;
+      overflow-x: hidden;
+    }
 
-        h2 {
-            color: #ffd700;
-        }
-    </style>
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #ffdd57;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin-top: 10px;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 30px 0 10px;
+      font-size: 1.8rem;
+      color: #ffdd57;
+    }
+
+    .swiper {
+      width: 90%;
+      max-width: 1100px;
+      height: auto;
+      margin: 30px auto;
+      padding-bottom: 40px;
+    }
+
+    .swiper-slide {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .swiper-slide:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    }
+
+    .swiper-slide a {
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+
+    .project-image {
+      width: 100%;
+      max-width: 320px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      color: #ffd700;
+      margin: 10px 0 5px;
+    }
+
+    p {
+      font-size: 15px;
+      margin: 5px 0;
+      color: #e0e0e0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #ffdd57;
+    }
+
+    .swiper-pagination-bullet {
+      background-color: #ccc;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #ffdd57;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .project-image {
+        height: 180px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
 </head>
-<body class="projects">
-    
-    <header>
-        <h1>Projects</h1>
-        <a href="index.html" style="color: white;">Home</a>
-    </header>
+<body>
 
-    <!-- Swiper Carousel -->
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <!-- Track My Bus Project -->
-            <div class="swiper-slide">
-                <img src="assets/images/Track_my_bus.png" alt="Track My Bus" class="project-image">
-                <h2>Track My Bus</h2>
-                <p>A real-time bus tracking system that allows students and employees to track their college bus locations, complete routes, and driver details using a web-based platform.</p>
-                <p><b>Technologies Used:</b> Node.js, MongoDB, HTML, CSS, JavaScript</p>
-            </div>
+  <!-- Header -->
+  <header>
+    <h1>Projects</h1>
+    <a href="index.html">← Back to Home</a>
+  </header>
 
-            <!-- Predictive Maintenance System -->
-            <div class="swiper-slide">
-                <img src="assets/images/Ambulance_tracking_system.jpeg" alt="Ambulance Tracking System" class="project-image">
-                <h2>Ambulance Tracking System</h2>
-                <p>A real-time GPS tracking system that helps hospitals and emergency responders locate and manage ambulances efficiently, reducing response time during emergencies.</p>
-                <p><b>Technologies Used:</b> Android Studio, Google Maps API, Firebase</p>
-            </div>
+  <!-- Section Title -->
+  <h2>Featured Projects</h2>
 
-            <!-- Statistical Analysis Using Excel -->
-            <div class="swiper-slide">
-                <img src="assets/images/Statistical_analysis.jpeg" alt="Statistical Analysis Using Excel" class="project-image">
-                <h2>Statistical Analysis Using Excel</h2>
-                <p>Analyzed student performance datasets using Excel to extract meaningful insights and trends through statistical methods and visualization.</p>
-                <p><b>Technologies Used:</b> Excel, Data Analysis</p>
-            </div>
+  <!-- Swiper Container -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
 
-            <!-- Cloud-Based Attendance System -->
-            <div class="swiper-slide">
-                <img src="assets/images/cloud_attendance.jpeg" alt="Cloud-Based Attendance System" class="project-image">
-                <h2>Cloud-Based Attendance System</h2>
-                <p>A face recognition-based cloud system for automated attendance tracking, ensuring accuracy and security in educational institutions.</p>
-                <p><b>Technologies Used:</b> Python, OpenCV, AWS</p>
-            </div>
-        </div>
+      <!-- Project 1 -->
+      <div class="swiper-slide">
+        <a href="https://your-demo-link-trackmybus.netlify.app" target="_blank">
+          <img src="assets/images/Track_my_bus.png" alt="Track My Bus" class="project-image">
+          <h3>Track My Bus</h3>
+          <p>Real-time tracking of college buses with routes and driver info.</p>
+          <p><b>Tech:</b> Node.js, MongoDB, JavaScript</p>
+        </a>
+      </div>
 
-        <!-- Navigation Buttons -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- Pagination -->
-        <div class="swiper-pagination"></div>
+      <!-- Project 2 -->
+      <div class="swiper-slide">
+        <a href="https://github.com/jakkamanasa5614/ambulance-tracker" target="_blank">
+          <img src="assets/images/Ambulance_tracking_system.jpeg" alt="Ambulance Tracker" class="project-image">
+          <h3>Ambulance Tracking System</h3>
+          <p>Live GPS tracking of ambulances for emergency services.</p>
+          <p><b>Tech:</b> Android Studio, Google Maps API, Firebase</p>
+        </a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="swiper-slide">
+        <a href="https://your-excel-analysis-link" target="_blank">
+          <img src="assets/images/Statistical_analysis.jpeg" alt="Excel Analysis" class="project-image">
+          <h3>Excel Performance Analysis</h3>
+          <p>Student data analytics with Excel charts and insights.</p>
+          <p><b>Tech:</b> MS Excel, Data Analytics</p>
+        </a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="swiper-slide">
+        <a href="https://github.com/jakkamanasa5614/cloud-attendance" target="_blank">
+          <img src="assets/images/cloud_attendance.jpeg" alt="Cloud Attendance" class="project-image">
+          <h3>Cloud-Based Attendance System</h3>
+          <p>Face recognition for secure attendance hosted on AWS.</p>
+          <p><b>Tech:</b> Python, OpenCV, AWS</p>
+        </a>
+      </div>
+
     </div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper', {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    </script>
+    <!-- Swiper Controls -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Jakka Manasa. All rights reserved.</p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      }
+    });
+  </script>
 
 </body>
 </html>

@@ -1,87 +1,107 @@
+<!-- Jakka Manasa - about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About Me</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        /* About Me Section Styling */
-        .about-container {
-            display: flex;
-            align-items: center;
-            max-width: 800px;
-            margin: 50px auto;
-            background: rgba(0, 0, 0, 0.6); /* Transparent box */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Jakka Manasa</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/script.js"></script>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
 
-        /* Profile Image Styling */
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 10px;
-            object-fit: cover;
-            border: 3px solid white;
-            margin-right: 20px;
-        }
+    body > section {
+      flex: 1;
+    }
 
-        /* Text Content */
-        .about-text {
-            flex: 1;
-        }
+    .about-section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
 
-        h2, h3 {
-            color: #ffd700; /* Gold color for headings */
-        }
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+    }
 
-        ul {
-            list-style-type: square;
-        }
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid #ffd700;
+    }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .about-container {
-                flex-direction: column;
-                text-align: center;
-            }
+    .about-text {
+      max-width: 500px;
+      text-align: left;
+    }
 
-            .profile-img {
-                margin-bottom: 15px;
-                margin-right: 0;
-            }
-        }
-    </style>
+    .about-text ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
 </head>
-<body>
+<body class="home">
+  <header>
+    <h1>About Me</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certificate.html">Certifications</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <h1>About Me</h1>
-        <a href="index.html" style="color: white;">Home</a>
-    </header>
+  <section class="about-section">
+    <div class="about-container">
+      <img src="assets/images/my_photo.jpg" class="profile-img" alt="Manasa's Photo" />
 
-    <section>
-        <div class="about-container">
-            <!-- Your Professional Image -->
-            <img src="assets/images/my_photo.jpg" alt="Manasa's Photo" class="profile-img">
+      <div class="about-text">
+        <h2>Hello! 👋</h2>
+        <p>
+          I'm <strong>Jakka Manasa</strong>, a final-year B.Tech CSE student passionate about solving real-world
+          problems through full-stack development and cloud-based technologies. I love transforming ideas into smart,
+          scalable solutions.
+        </p><br>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Languages: Python, Java, JavaScript</li>
+          <li>Frontend: HTML5, CSS3, Bootstrap, Flutter</li>
+          <li>Backend: Node.js, Express.js</li>
+          <li>Databases: MySQL, MongoDB, Firebase</li>
+          <li>Cloud & Tools: AWS, Git, VS Code, Postman</li>
+        </ul>
+        <a href="resume.html" class="btn">Download My Resume</a>
+      </div>
+    </div>
+  </section>
 
-            <!-- About Me Content -->
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Hi, I'm <b>Manasa</b>, a passionate <b>BTech 3rd-year student</b> aspiring to be a <b>Data Analyst</b>.  
-                   I love working with <b>data, solving problems</b>, and building <b>web applications</b>.</p>
-
-                <h3>Skills</h3>
-                <ul>
-                    <li>Python, Java, JavaScript</li>
-                    <li>HTML, CSS, Bootstrap</li>
-                    <li>SQL (MySQL, SQLite, MongoDB)</li>
-                    <li>AWS, Cloud Computing</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
+  <footer>
+    <p>&copy; 2025 Jakka Manasa. All rights reserved.</p>
+  </footer>
 </body>
 </html>

@@ -1,99 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certifications</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        /* General Page Styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('assets/images/certificate-bg.jpg'); /* Add your background image */
-            background-size: cover;
-            background-position: center;
-            color: white;
-        }
+  <meta charset="UTF-8">
+  <title>Certificates | Jakka Manasa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      margin: 0;
+      color: white;
+    }
 
-        /* Header Styling */
-        header {
-            background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 20px;
+      text-align: center;
+    }
 
-        header a {
-            color: #ffd700;
-            text-decoration: none;
-            font-size: 18px;
-            margin-left: 20px;
-        }
+    header h1 {
+      margin: 0;
+      color: #ffdd57;
+      font-size: 2.2rem;
+    }
 
-        /* Transparent Box for Certifications */
-        section {
-            background: rgba(255, 255, 255, 0.2); /* Transparent white box */
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            backdrop-filter: blur(5px); /* Adds a blur effect to make text pop */
-        }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+      margin-top: 10px;
+    }
 
-        h1, h2 {
-            color: #fff;
-            text-align: center;
-        }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
 
-        /* Styling the List */
-        ul {
-            text-align: left;
-            padding-left: 20px;
-            color: #fff; /* Ensuring text is visible */
-            font-size: 18px;
-        }
+    h2 {
+      color: #ffd700;
+      border-bottom: 2px solid #ffd700;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
 
-        /* Aligning the list with the year on the right */
-        li {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px 0;
-        }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
 
-        .year {
-            color: #ffd700; /* Highlighting the year */
-            font-weight: bold;
-        }
-    </style>
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px 0;
+      padding: 10px 15px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+    }
+
+    .year {
+      font-weight: bold;
+      color: #ffdd57;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 15px;
+      color: #aaa;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body class="certificate">
-    <header>
-        <h1>Certifications</h1>
-        <a href="index.html">Home</a>
-    </header>
 
-    <section>
-        <h2>Full Stack & Web Development:</h2>
-        <ul>
-            <li><span>Front-End Development with HTML5 & CSS3 (TASK)</span> <span class="year">[2023]</span></li>
-            <li><span>Bootstrap Course Completion</span> <span class="year">[2024]</span></li>
-            <li><span>Build Your Own Responsive & Static Website</span> <span class="year">[2024]</span></li>
-        </ul>
+  <!-- Header -->
+  <header>
+    <h1>My Certifications</h1>
+    <a href="index.html">← Back to Home</a>
+  </header>
 
-        <h2>Programming & Databases:</h2>
-        <ul>
-            <li><span>Database Programming with SQL</span> <span class="year">[2024]</span></li>
-            <li><span>Java Foundations</span> <span class="year">[2023]</span></li>
-            <li><span>Python Fundamentals</span> <span class="year">[2023]</span></li>
-        </ul>
+  <!-- Certification Section -->
+  <section>
+    <h2>UI/UX & Web Design</h2>
+    <ul>
+      <li><span>UI/UX Design Workshop – NxtWave</span> <span class="year">[2024]</span></li>
+      <li><span>Build Your Own Static Website – NxtWave</span> <span class="year">[2024]</span></li>
+      <li><span>Build Your Own Responsive Website – Bootstrap, Flexbox</span> <span class="year">[2024]</span></li>
+    </ul>
 
-        <h2>Others:</h2> 
-        <ul>
-            <li><span>NS2 Simulation</span> <span class="year">[2024]</span></li>
-        </ul>
-    </section>
+    <h2>Full Stack & Development</h2>
+    <ul>
+      <li><span>Front-End Development with HTML5 & CSS3 (TASK)</span> <span class="year">[2023]</span></li>
+      <li><span>Bootstrap Course Completion</span> <span class="year">[2024]</span></li>
+      <li><span>Java Foundations</span> <span class="year">[2023]</span></li>
+      <li><span>Programming Foundations with Python – NxtWave</span> <span class="year">[2023]</span></li>
+    </ul>
+
+    <h2>Databases & Cloud</h2>
+    <ul>
+      <li><span>Introduction to Databases – NxtWave</span> <span class="year">[2024]</span></li>
+      <li><span>Database Programming with SQL</span> <span class="year">[2024]</span></li>
+    </ul>
+
+    <h2>Workshops & Extra Programs</h2>
+    <ul>
+      <li><span>MCP Mega Workshop – Multi-domain Technical Training</span> <span class="year">[2024]</span></li>
+      <li><span>NS2 Simulation Workshop – Network Simulation</span> <span class="year">[2024]</span></li>
+      <li><span>Entrepreneurial Thinking – IUCEE</span> <span class="year">[2024]</span></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Jakka Manasa. All rights reserved.
+  </footer>
+
 </body>
 </html>
