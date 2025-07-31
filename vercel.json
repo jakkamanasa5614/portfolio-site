@@ -1,6 +1,9 @@
 {
   "rewrites": [
     { "source": "/resume", "destination": "/Resume.html" },
-    { "source": "/certificates", "destination": "/certificates.html" }
+    { "source": "/certificates", "destination": "/certificates.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/projects", "destination": "/projects.html" }
   ]
 }
