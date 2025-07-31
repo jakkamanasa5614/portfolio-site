@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/certificate", "destination": "/certificates.html" },
-    { "source": "/resume", "destination": "/Resume.html" }
+    { "source": "/resume", "destination": "/Resume.html" },
+    { "source": "/certificates", "destination": "/certificates.html" }
   ]
 }
